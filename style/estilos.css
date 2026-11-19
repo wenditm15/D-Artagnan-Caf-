@@ -1,0 +1,55 @@
+body {
+    background-color: #f8f7f2;
+    font-family: Georgia, serif;
+    color: #30201c;
+}
+
+.formulario {
+    background-color: #eee4dc;
+    width: 320px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #d8cfc6;
+}
+
+h2 {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #55433f;
+}
+
+form p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d8cfc6;
+    border-radius: 4px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.boton {
+    width: 100%;
+    padding: 12px;
+    background-color: #76504e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+}
