@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'Artagnan Café — Registro</title>
+    <!-- 1. Hoja de estilos "Dartagnan_Cofe.css" -->
+    <link rel="stylesheet" href="Dartagnan_Cofe.css">
+    <!-- 2. Hoja de estilos login-registro.css -->
+    <link rel="stylesheet" href="login-registro.css">
+</head>
+<body>
+    <!-- Header original -->
+    <header class="header">
+        <img src="Images/Imagen-Logo.png" alt="Logo de D'Artagnan Café" width="250" height="100">
+        <nav>
+            <ul>
+                <li><a href="DArtagnan_Café.html">Inicio</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal: Formulario de Registro -->
+    <main class="main-content">
+        <section class="form-section form-card-lg">
+            <div class="form-card">
+                <h2>Registro en D'Artagnan</h2>
+                <p>Crea tu cuenta para disfrutar de la experiencia del café</p>
+                
+                <form action="#" method="post">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fullName">Nombre completo *</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="Ej. Laura Sofía Martínez">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" required placeholder="nombre@correo.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Teléfono / WhatsApp *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="300 123 4567">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reg-password">Contraseña *</label>
+                            <input type="password" id="reg-password" name="password" required minlength="6" placeholder="Mínimo 6 caracteres">
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="birthDate">Fecha de nacimiento (Opcional)</label>
+                            <input type="date" id="birthDate" name="birthDate">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="role">Tipo de Perfil *</label>
+                            <select id="role" name="role" required>
+                                <option value="cliente">Soy Cliente</option>
+                                <option value="staff">Soy Empleado / Staff</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="acceptTerms" required> Acepto los <a href="#" class="form-link">Términos y Condiciones</a> y la <a href="#" class="form-link">Política de Privacidad</a> *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="button btn-block">Crear cuenta</button>
+                </form>
+
+                <p class="form-footer-text">
+                    ¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer original -->
+    <footer>
+        <p>D'Artagnan Café - Todos por un buen café</p>
+    </footer>
+</body>
+</html>
