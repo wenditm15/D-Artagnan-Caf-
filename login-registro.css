@@ -1,0 +1,160 @@
+/* ==========================================
+   ESTILOS DE LOGIN Y REGISTRO - D'ARTAGNAN CAFÉ
+   ========================================== */
+
+/* Ajuste para enlaces del menú en estas pantallas */
+nav li a {
+    text-decoration: none;
+    color: #30201c;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal centrado */
+.main-content {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 180px);
+}
+
+/* Sección contenedora (480px para Login, 650px para Registro) */
+.form-section {
+    width: 100%;
+    max-width: 480px;
+}
+
+.form-section:has(.form-card-lg) {
+    max-width: 650px;
+}
+
+/* Tarjeta del formulario */
+.form-card {
+    background-color: #ffffff;
+    border: 1px solid #e9e5df;
+    border-radius: 6px;
+    padding: 32px;
+    box-shadow: 0 4px 12px rgba(48, 32, 28, 0.06);
+}
+
+.form-card h2 {
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #30201c;
+    text-align: center;
+}
+
+.form-card > p {
+    color: #55433f;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Campos y etiquetas */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #30201c;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="password"],
+.form-group input[type="date"],
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d8cfc6;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #30201c;
+    box-sizing: border-box;
+    background-color: #f8f7f2;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #76504e;
+    background-color: #ffffff;
+}
+
+/* Cuadrícula de 2 columnas para el Registro */
+.form-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form-grid .form-group {
+    flex: 1 1 calc(50% - 15px);
+    min-width: 220px;
+}
+
+/* Fila de "Recordarme" y "Olvidaste contraseña" */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    color: #55433f;
+    cursor: pointer;
+}
+
+.form-link {
+    color: #76504e;
+    text-decoration: none;
+}
+
+.form-link:hover {
+    text-decoration: underline;
+}
+
+/* Botón ancho completo (complementa la clase .button de tu compañera) */
+.btn-block {
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Texto inferior de navegación entre Login y Registro */
+.form-footer-text {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #55433f;
+}
+
+.form-footer-text a {
+    color: #76504e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.form-footer-text a:hover {
+    text-decoration: underline;
+}
