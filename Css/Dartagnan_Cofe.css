@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    background-color: #f8f7f2;
+    color: #30201c;
+    font-family: Georgia, serif;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #eee4dc;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: #30201c;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+nav a:hover,
+nav a:active {
+    color: #76504e;
+    font-weight: bold;
+}
+
+.activo {
+    color: #76504e;
+    font-weight: bold;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-ingresar {
+    border: 1px solid #30201c;
+    color: #30201c;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+.btn-reservar {
+    background-color: #76504e;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+
+.section-1 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.texto-inicio {
+    width: 35%;
+}
+
+.texto-inicio h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.fotos-inicio {
+    width: 65%;
+    display: flex;
+    gap: 10px;
+}
+
+.fotos-inicio img {
+    width: 31%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.button {
+    background-color: #76504e;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+.button,
+.btn-ingresar,
+.btn-reservar {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.button:hover,
+.btn-reservar:hover {
+    background-color: #5e3f3d;
+}
+
+.btn-ingresar:hover {
+    background-color: #30201c;
+    color: white;
+}
+
+.button:active,
+.btn-ingresar:active,
+.btn-reservar:active {
+    transform: scale(0.95);
+}
+
+.product-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.cont-products {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.product {
+    width: 33%;
+    background-color: white;
+    border: 1px solid #e9e5df;
+    padding: 25px 10px;
+    text-align: center;
+}
+
+.product h3 {
+    font-size: 20px;
+}
+
+.product ul {
+    padding: 0;
+}
+
+.product li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dotted #d8cfc6;
+}
+
+
+.eventos {
+    background-color: #eee4dc;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contacto {
+    background-color: #f8f7f2;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.eventos h2,
+.contacto h2 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.eventos p,
+.contacto p {
+    font-size: 14px;
+    color: #55433f;
+    margin-bottom: 30px;
+}
+
+
+footer {
+    background-color: #76504e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 20px;
+        position: static;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        gap: 15px;
+    }
+
+    .section-1 {
+        flex-direction: column;
+    }
+
+    .texto-inicio,
+    .fotos-inicio {
+        width: 100%;
+    }
+
+    .texto-inicio {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .texto-inicio h1 {
+        font-size: 36px;
+    }
+
+    .fotos-inicio img {
+        height: 200px;
+    }
+
+    .cont-products {
+        flex-direction: column;
+    }
+
+    .product {
+        width: auto;
+    }
+}

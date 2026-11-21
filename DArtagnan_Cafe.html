@@ -3,95 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D'Artagnan</title>
-    <link rel="stylesheet" href="/Dartagnan_Cofe.css">
+    <title>D'Artagnan Café</title>
+    <link rel="stylesheet" href="Css/Dartagnan_Cofe.css">
 </head>
 <body>
     <header class="header">
-        <img src="/Images/Imagen-Logo.png" alt="Logo de D'Artagnan Café" width="250" height="100">
+        <img src="Images/Imagen-Logo.png" alt="Logo de D'Artagnan Café" width="250" height="100">
+
         <nav>
             <ul>
-                <li>Inicio</li>
-                <li>Eventos</li>
-                <li>Contacto</li>
-                <li>Menú</li>
+                <li><a href="DArtagnan_Cafe.html" class="activo">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+
+        <div class="botones">
+            <a href="Html/login.html" class="btn-ingresar">Ingresar</a>
+            <a href="Html/formulario.html" class="btn-reservar">Reservar</a>
+        </div>
     </header>
 
     <section class="section-1">
-        <div>
+        <div class="texto-inicio">
             <p>Una Cafetería para todos</p>
             <h1>Todos por <br> un buen café</h1>
             <p>Café de especialidad, desayunos,<br> brunch y momentos para compartir.</p>
-            <button class="button">Ver menú</button>
+            <a href="#menu" class="button">Ver menú</a>
         </div>
-        <div>
-            <img
-                src="/Images/Imagen-header2.jpg"
-                alt="Taza de café" width="400" height="500">
-            <img
-                src="/Images/Imagen-header3.jpg"
-                alt="Interior de una cafetería" width="400" height="500">
-            <img
-                src="/Images/Imagen-header1.jpg"
-                alt="Taza de café con leche" width="400" height="500">
+        <div class="fotos-inicio">
+            <img src="Images/Imagen-header2.jpg" alt="Taza de café">
+            <img src="Images/Imagen-header3.jpg" alt="Interior de una cafetería">
+            <img src="Images/Imagen-header1.jpg" alt="Taza de café con leche">
         </div>
     </section>
 
-    <h2 class="product-title">Nuestro menú</h2>
-    <section class="section-2">
-        <div class="cont-products">
-            <div class="product">
-                <h3>Cafés</h3>
-                <ul>
-                    <li><span>Espresso</span> <span>$5.300</span></li>
-                    <li><span>Cappuccino</span> <span>$8.500</span></li>
-                    <li><span>Latte</span> <span>$7.500</span></li>
-                </ul>
-            </div>
-
-            <div class="product">
-                <h3>Panadería</h3>
-                <ul>
-                    <li><span>Torta de zanahoria</span> <span>$13.500</span></li>
-                    <li><span>Brownie</span> <span>$3.900</span></li>
-                    <li><span>Brownie</span> <span>$7.500</span></li>
-                    <li><span>Galletas</span> <span>$2.900</span></li>
-                    <li><span>Croissant</span> <span>$7.000</span></li>
-                </ul>
-            </div>
-
-            <div class="product">
-                <h3>Desayunos</h3>
-                <ul>
-                    <li><span>Omelette</span> <span>$17.000</span></li>
-                    <li><span>Tostadas de aguacate</span> <span>$32.900</span></li>
-                    <li><span>Tostadas francesas</span> <span>$21.000</span></li>
-                    <li><span>Sándwich de jamón</span> <span>$36.000</span></li>
-                    <li><span>Panqueques</span> <span>$27.500</span></li>
-                    <li><span>Huevos benedictinos</span> <span>$32.000</span></li>
-                </ul>
-            </div>
+    <h2 class="product-title" id="menu">Nuestro menú</h2>
+    <div class="cont-products">
+        <div class="product">
+            <h3>Cafés</h3>
+            <ul>
+                <li><span>Espresso</span> <span>$5.300</span></li>
+                <li><span>Cappuccino</span> <span>$8.500</span></li>
+                <li><span>Latte</span> <span>$7.500</span></li>
+            </ul>
         </div>
-    </section>
 
-    <section class="eventos">
+        <div class="product">
+            <h3>Panadería</h3>
+            <ul>
+                <li><span>Torta de zanahoria</span> <span>$13.500</span></li>
+                <li><span>Brownie</span> <span>$3.900</span></li>
+                <li><span>Brownie con helado</span> <span>$7.500</span></li>
+                <li><span>Galletas</span> <span>$2.900</span></li>
+                <li><span>Croissant</span> <span>$7.000</span></li>
+            </ul>
+        </div>
+
+        <div class="product">
+            <h3>Desayunos</h3>
+            <ul>
+                <li><span>Omelette</span> <span>$17.000</span></li>
+                <li><span>Tostadas de aguacate</span> <span>$32.900</span></li>
+                <li><span>Tostadas francesas</span> <span>$21.000</span></li>
+                <li><span>Sándwich de jamón</span> <span>$36.000</span></li>
+                <li><span>Panqueques</span> <span>$27.500</span></li>
+                <li><span>Huevos benedictinos</span> <span>$32.000</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="eventos" id="eventos">
         <h2>Eventos</h2>
-        <p> Un espacio para compartir buenos momentos y disfrutar de un café.</p>
-        <button class="button">Reserva tu lugar</button>
+        <p>Un espacio para compartir buenos momentos y disfrutar de un café.</p>
+        <a href="Html/formulario.html" class="button">Reserva tu lugar</a>
     </section>
 
-    <section class="contacto">
+    <section class="contacto" id="contacto">
         <h2>Contáctanos</h2>
-        <p>Escríbenos para conocer más sobre nuestra cafetería.
-        </p>
-        <button class="button">Enviar correo</button>
+        <p>Escríbenos para conocer más sobre nuestra cafetería.</p>
+        <a href="mailto:contacto@dartagnancafe.com" class="button">Enviar correo</a>
     </section>
 
     <footer>
         <p>D'Artagnan Café - Todos por un buen café</p>
     </footer>
-
 </body>
 </html>

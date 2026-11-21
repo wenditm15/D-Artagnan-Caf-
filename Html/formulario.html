@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'Artagnan Café - Reserva para Eventos</title>
+    <link rel="stylesheet" href="../Css/Dartagnan_Cofe.css">
+    <link rel="stylesheet" href="../Css/login-registro.css">
+</head>
+<body>
+    <header class="header">
+        <img src="../Images/Imagen-Logo.png" alt="Logo de D'Artagnan Café" width="250" height="100">
+
+        <nav>
+            <ul>
+                <li><a href="../DArtagnan_Cafe.html">Inicio</a></li>
+                <li><a href="../DArtagnan_Cafe.html#menu">Menú</a></li>
+                <li><a href="../DArtagnan_Cafe.html#eventos">Eventos</a></li>
+                <li><a href="../DArtagnan_Cafe.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="botones">
+            <a href="login.html" class="btn-ingresar">Ingresar</a>
+            <a href="formulario.html" class="btn-reservar">Reservar</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="form-section">
+            <div class="form-card">
+                <h2>Registro para Eventos</h2>
+                <p>Reserva tu lugar y comparte un buen café con nosotros</p>
+
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Número de contacto</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pago">Método de pago</label>
+                        <select id="pago" name="pago">
+                            <option>Efectivo</option>
+                            <option>Tarjeta</option>
+                            <option>Transferencia</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="button btn-block">Reservar lugar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>D'Artagnan Café - Todos por un buen café</p>
+    </footer>
+</body>
+</html>
